@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+@-webkit-keyframes popup {
+  0% {
+    scale: 0%;
+  }
+  100% {
+    scale: 100%;
+  }
+}
+@keyframes popup {
+  0% {
+    scale: 0%;
+  }
+  100% {
+    scale: 100%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto';
+  font-weight: 300;
+  background: #223;
+  color: #eee;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero .header {
+  font-weight: 100;
+  font-size: 5rem;
+  padding: 3rem;
+}
+
+.hero .add {
+  font-size: 1.5rem;
+}
+
+.hero .tasks {
+  list-style-type: none;
+  margin-top: 2rem;
+}
+
+.hero .tasks .task {
+  font-size: 2rem;
+  -webkit-animation: popup .5s;
+          animation: popup .5s;
+  background: #10102f;
+  display: flexbox;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 2rem;
+}
+/*# sourceMappingURL=main.css.map */

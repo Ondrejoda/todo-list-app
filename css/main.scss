@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+$main-bg: #223;
+$main-color: #eee;
+$task-color: #10102f;
+
+@keyframes popup {
+    0% {
+        scale: 0%;
+    }
+    100% {
+        scale: 100%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    font-weight: 300;
+    background: $main-bg;
+    color: $main-color;
+}
+
+.hero {
+    text-align: center;
+    .header {
+        font-weight: 100;
+        font-size: 5rem;
+        padding: 3rem;
+    }
+    .add { 
+        font-size: 1.5rem;
+    }
+    .tasks {
+        list-style-type: none;
+        margin-top: 2rem;
+        .task {
+            font-size: 2rem;
+            animation: popup .5s;
+            background: $task-color;
+            display: flexbox;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 2rem;
+        }
+    }
+}
